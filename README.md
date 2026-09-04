@@ -167,6 +167,10 @@ cd apps/api
 
 Os testes de integração PostgreSQL/Redis usam Testcontainers e são executados quando Docker está disponível.
 
+## Deploy na Vercel
+
+O ficheiro `vercel.json` configura automaticamente o monorepo. Na Vercel, mantém a **Root Directory** na raiz do repositório e deixa os comandos definidos pelo projeto. Para publicar apenas a demonstração visual, adiciona `NEXT_PUBLIC_DEMO_MODE=true` em Settings → Environment Variables e faz Redeploy.
+
 ## Variáveis de ambiente
 
 A referência completa está em [.env.example](.env.example). Regras:
