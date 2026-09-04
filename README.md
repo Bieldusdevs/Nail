@@ -15,7 +15,7 @@ Aplicação full-stack para marcação de serviços de unhas, construída como u
 - Recuperação de palavra-passe com token aleatório, hash SHA-256 em base de dados, uso único e validade de 20 minutos.
 - Rate limiting em Redis, respostas públicas normalizadas e request IDs.
 - CSP com nonce, HSTS, proteção de framing, políticas de permissões e headers defensivos.
-- Flyway, OpenAPI, Actuator, Prometheus, logs estruturados, Testcontainers, Playwright, Vitest, ArchUnit e CI.
+- Flyway, OpenAPI, Actuator, Prometheus, logs estruturados, Testcontainers, Playwright, Vitest e ArchUnit.
 
 ## Stack
 
@@ -73,7 +73,6 @@ lume/
 │           │   ├── security/
 │           │   └── shared/
 │           └── resources/db/migration/
-├── .github/workflows/
 ├── docker-compose.yml
 └── .env.example
 ```
@@ -186,6 +185,6 @@ A referência completa está em [.env.example](.env.example). Regras:
 
 ## Estado da entrega
 
-Lint, typecheck, testes unitários, E2E, build Next.js e `mvn verify` terminam sem erros. Os testes Testcontainers ficam automaticamente ignorados em ambientes sem Docker e correm no CI com Docker disponível.
+Lint, typecheck, testes unitários, E2E, build Next.js e `mvn verify` terminam sem erros. Os testes Testcontainers são executados automaticamente quando Docker está disponível.
 
 As fotografias editoriais incluídas foram criadas especificamente para esta demonstração. Antes de lançamento comercial, a informação legal, textos de consentimento e política de cancelamento devem ser validados por assessoria jurídica em Portugal.

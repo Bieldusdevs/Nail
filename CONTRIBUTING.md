@@ -17,7 +17,7 @@ npm ci
 cd apps/api && ./mvnw test
 ```
 
-Use Node indicado em `.nvmrc` e Java 21. O hook pre-commit executa lint-staged; o pre-push executa validações web e API.
+Use o Node indicado em `.nvmrc` e Java 21. Antes de cada envio, execute as validações web e API indicadas abaixo.
 
 ## Branches e commits
 
@@ -117,7 +117,7 @@ Antes de adicionar:
 - confirmar manutenção, licença e tamanho;
 - verificar advisories e transitivas;
 - justificar por que código nativo não basta;
-- fixar major compatível e deixar Dependabot gerir atualizações.
+- fixar versões compatíveis e rever atualizações regularmente.
 
 Executar `npm audit --omit=dev` e o perfil Maven `security-scan` quando existir `NVD_API_KEY`.
 
@@ -125,7 +125,7 @@ Executar `npm audit --omit=dev` e o perfil Maven `security-scan` quando existir 
 
 O PR só está pronto quando:
 
-- CI verde;
+- validações locais aprovadas;
 - sem secrets no diff/histórico;
 - autorização e validação revistas;
 - screenshots desktop/mobile para UI;

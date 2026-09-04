@@ -164,7 +164,7 @@ Configuração recomendada:
 - [ ] Swagger desativado ou protegido
 - [ ] PostgreSQL e Redis com TLS, backups e rede privada
 - [ ] testes Testcontainers e E2E aprovados
-- [ ] npm audit, OWASP Dependency-Check e CodeQL aprovados
+- [ ] npm audit e OWASP Dependency-Check aprovados
 - [ ] restauração de backup ensaiada
 - [ ] alertas para erro, latência, saturação, auth failures e rate limits
 - [ ] política de retenção e DPIA/RGPD revistas
